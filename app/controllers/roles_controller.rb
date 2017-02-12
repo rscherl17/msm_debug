@@ -18,7 +18,7 @@ class RolesController < ApplicationController
 
     @role.save
 
-    render("show")
+    redirect_to("show")
   end
 
   def edit_form
@@ -34,7 +34,7 @@ class RolesController < ApplicationController
 
     @role.save
 
-    render("show")
+    redirect_to("http://localhost:3000/roles/#{@role.id}")
   end
 
   def destroy
